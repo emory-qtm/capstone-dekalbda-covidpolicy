@@ -1,8 +1,13 @@
+'''
+This program merge the senctencing data and prosecutor data together and produce
+a csv file of merged data and a txt file for unique values in each column
+'''
+
 import pandas as pd
 
-Prosecutor_Data = pd.read_csv('Data/Prosecutor Data-01-25-2023.csv')
-Sentencing_Data = pd.read_csv('Data/Sentencing Information-01-25-2023.csv')
-Victim_Data = pd.read_csv('Data/Victim Data-01-25-2023.csv')
+Prosecutor_Data = pd.read_csv('Data/Prosecutor Data-01-25-2023_name_rem.csv')
+Sentencing_Data = pd.read_csv('Data/Sentencing Information-01-25-2023_name_rem.csv')
+Victim_Data = pd.read_csv('Data/Victim Data-01-25-2023_name_rem.csv')
 
 Sentencing_Data['Matching_ID'] = Sentencing_Data.CaseNbr + Sentencing_Data.PartyID.astype(str)
 Prosecutor_Data['Matching_ID'] = Prosecutor_Data.CaseNumber + Prosecutor_Data.UniquePersonID.astype(str)
