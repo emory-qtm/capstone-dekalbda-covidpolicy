@@ -102,3 +102,16 @@ for v in breaks:
     idx = value.index[value == v]
     breaks_jkp.append(idx)
 print(breaks_jkp)
+
+'''
+case per month per division
+'''
+data_div = data
+data_div['JudgeandDivisionAssigned'] = data.JudgeandDivisionAssigned.str.extract('(\d+)') #get division number
+data_div['CaseOriginDate'] = pd.to_datetime(data_div['CaseOriginDate'])
+data_div['month_year'] = data_div['CaseOriginDate'].dt.to_period('M')
+data_div['month_year'] = data_div['month_year'].astype(str)
+data_div['month_year'] = pd.to_datetime(data_div['month_year'])
+data_div = data_div.groupby(['JudgeandDivisionAssigned','month_year']).size().reset_index(name='counts')
+data_div.set_index('month_year', inplace=True)
+data_div.groupby('JudgeandDivisionAssigned')['counts'].plot(legend=True)
