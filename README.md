@@ -37,7 +37,25 @@ Click the appropriate link for your system to download the executable file: Wind
 ![img2](/image/python_release.png)
 
 Follow the default setting and finish the installation
+![img3](/image/python_finish.png)
+
+You can verify whether the Python installation is successful either through the command line or through the Integrated Development Environment (IDLE) application, if you chose to install it.
+
+Go to Start and enter cmd in the search bar. Click Command Prompt.
+
+Enter the following command in the command prompt:
+
+python --version
+
+An example of the output is:
+
+Output
+Python 3.10.10
+
 ### Pycharm
+You can download PyCharm from the [JetBrains website](https://www.jetbrains.com/pycharm/).
+Choose Community Edition which will be enough for the project.
+![download-pycharm.jpg](image%2Fdownload-pycharm.jpg)
 
 ### Anaconda
 
