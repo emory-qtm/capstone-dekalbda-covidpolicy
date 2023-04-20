@@ -124,8 +124,29 @@ In our capstone project, we have one notebook. finalNotebook.ipynb notebook is a
 | Not Recidivist | 1416           | 5036               |
 
 ## Plots
+Figure 1 displays the average case management time in days for charges disposed on a given disposition date from 2017 to 2023. Case management time was trending downward (i.e. processing efficiency was improving) until around March of 2020, at which point case management time increased drastically. Levels have remained high since the onset of the pandemic.
+Figure 2 shows the number of policy eligible and policy applied charges disposed on a given date from March 2020 until 2023. The number of eligible and applied charges has consistently increased, and there is a noticeable gap in between the number of eligible and the number of applied charges, although the distance varies with time. 
+
+![Picture2.png](image%2FPicture2.png) Fig. 1 Average case management time in days
+![Picture1.png](image%2FPicture1.png) Fig 2 Charges per month classified as policy eligible and policy applied
+
+Figures 3 and 4 depict the crime characteristics for the recidivist crimes for defendants who had a case dismissed under the policy. Most of the recidivist charges were felonies (72.1%), followed by misdemeanors (24.0%) and a small set of serious felonies (3.9%), the most severe crimes which are ineligible for the policy. The five most frequent recidivist charges were for drug possession, shoplifting, theft by taking, possession of a firearm or knife in the commission of a crime and possession of a firearm by a felon or person on probation. 
+
+![Picture3.png](image%2FPicture3.png) 
+![Picture4.png](image%2FPicture4.png)
+
+Fig. 3 & 4 For recidivists who had the policy applied, the crime severity and five most frequent statutes associated with the charges of their recidivist arrests
+
+Figures 5 and 6 show the same information, but for the recidivists who were eligible for the policy but did not have it applied. Although this population committed around the same proportion of felonies, there were slightly more serious felonies (6.5%) and fewer felonies (69.3%). The five most frequent charges were quite similar, as the two groups had four crimes in common and drug possession as the most frequent. Aggravated assaults were represented with higher frequency in the not applied group, and the crimes were committed at more similar frequencies than they were in the policy applied group.
+
+![Picture5.png](image%2FPicture5.png)
+![Picture6.png](image%2FPicture6.png)
+
+Fig. 5 & 6 For recidivists who did not have the policy applied, the crime severity and five most frequent statutes associated with the charges of their recidivist arrests
 
 ## Statistical Significance
+
+The results of the Z-test revealed that, given the time that has elapsed thus far, the policy does not have a significant effect on recidivism rates. The recidivism rate for the policy eligible, policy applied group was 0.032% and the rate for the policy eligible, policy not applied group was 0.042%. The Z-test value was -1.63, indicating that the null hypothesis can not be rejected. However, given that the Z-test value was negative, it appears as though the policy is trending towards lowering recidivism rates. By continuing to keep the same values constant but increasing the size of n1 and n2 according to their growth rates, it is estimated that an additional 223 days, or around 7.5 months, of additional data collection is needed to be sure whether or not the policy’s effects are significant. At that point in time, statistical significance will reveal itself if it exists (i.e. if the observed differences are the true differences). 
 
 ## Interpretation and Conclusion
 The three facets of our analysis — prosecutorial efficiency, defendant outcomes and demographic disparities — suggest that the policy is not compounding the ODDA’s workload, but the effects on the DeKalb County community’s overall well-being are less clear. The year 2020 was a complicated year for the criminal justice system — the onset of the pandemic in March 2020, which coincided with the policy implementation, forced the ODDA to shut down yet also exacerbated crime rates. Additionally, the widespread racial justice protests that occurred across the United States following the death of George Floyd and other Black citizens at the hands of law enforcement led to more arrests for violent crimes, which are not policy-eligible. The unique circumstances surrounding the policy’s origin explain the initial decrease in policy-eligible crimes at the beginning of 2020, However, the subsequent increase in policy eligible crimes suggests that the policy did play a more prominent role in the midst of the pandemic. The number of policy-eligible charges disposed per month has grown since the policy’s implementation, and the corresponding increase in the number of charges for which the policy was applied indicates that the policy is diverting more and more eligible defendants from the criminal justice system.
