@@ -83,33 +83,11 @@ Open Jupyter Notebook
 
 Find the .ipynd file of the project and finished
 
-### R
-
-Go to [R](https://cran.r-project.org/bin/windows/base/) and download the latest version
-
-![R.png](image%2FR.png)
-
-Follow the default setting and finish the installation
-
-### R Studio
-
-To begin, go to [Download the RStudio IDE](https://posit.co/download/rstudio-desktop/)
-
-![Rstudio.png](image%2FRstudio.png)
-
-Choose Download RStudio Desktop Free version
-
 ### Install prerequisite Python packages
 
 Open pycharm and open the command line, input:
 
-> pip install numpy pandas 
-
-### Install prerequisite R packages
-
-Open RStudio Desktop Free version and enter the following into the console:
-
->  install.packages(c("tidyverse", "strucchange", "tseries"))
+> pip install numpy pandas
 
 ## Dataset
 The dataset used in this Capstone project can not be uploaded to public repository and are not allowed to be stored on any personal or public device without the permission from the DeKalb District Attorney Office. However, in the readme, the structure of the data and explanation of variables used will be included.
