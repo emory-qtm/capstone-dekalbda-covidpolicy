@@ -93,12 +93,44 @@ Open pycharm and open the command line, input:
 The dataset used in this Capstone project can not be uploaded to public repository and are not allowed to be stored on any personal or public device without the permission from the DeKalb District Attorney Office. However, in the readme, the structure of the data and explanation of variables used will be included.
 
 # Code
+In our capstone project, we have one notebook. finalNotebook.ipynb notebook is a integrated notebook used both data cleaning, analysis, and visualization. We extract useful factors and target variables from raw datasets and combine them into cleaned datasets. Then we produce visualization to important factors that stakeholders care about, mainly recidivism-related variables. 
+
+- Decision Making Method: The decision-making method used in this study will be based on Z-test significance testing, which will help to identify the effect of the policy on recidivism rates and therefore community safety, and a structural break, which identifies points in time during which noticeable changes in case management efficiency occurred.
+
+
+- Policy Eligibility Criteria: A bank containing all the statutes associated with charges flagged as policy eligible by a prosecutor was created. Defendants were considered to be eligible for the policy if all their charges for a particular case were misdemeanors or could be found in the statute bank. Since the policy targets non-violent felonies — misdemeanors were already dismissed prior to the policy implementation — defendants who committed only misdemeanor crimes were not considered policy eligible. 
+
+- Policy Applied Criteria: Any charge that was eligible for the policy and had a disposition status matching one of the items in a list provided by the ODDA were considered to have had the policy applied. 
+
+
+| Policy Applied Disposition                     |
+|------------------------------------------------|
+| Dismissed                                      |
+| Dismissed Completed Pretrial Diversion         |
+| Dismissed Converted                            |
+| Dismissed Restrict                             |
+| Dismissed Restricted                           |
+| Nolle Prosse Converted                         |
+| Nolle Prosse Restrict                          |
+| Not Presented to Grand Jury Restrict           |
+| Not Presented to Grand Jury Restrict Converted |
+| Pre Trial Diversion Restrict                   |
+
+- Grouping Criteria: To see whether the policy is impacting recidivism rates, a comparison between the defendants with charges flagged as policy eligible by prosecutors and unflagged defendants with similar charges is necessary. Thus, the eligible defendants were divided as such: the treatment group is composed of defendants flagged by a prosecutor as policy eligible and had the policy applied the control group are those not flagged by a prosecutor as policy eligible but who have charges that meet the eligibility criteria and those flagged as eligible but did not have the policy applied. The former will heretofore be referred to as the policy eligible, policy applied population and the latter as the policy eligible, policy not applied population (see Appendix Item 5).
+
+|                | Policy Applied | Policy Not Applied |
+|----------------|----------------|--------------------|
+| Recidivist     | 46             | 212                |
+| Not Recidivist | 1416           | 5036               |
 
 ## Plots
 
 ## Statistical Significance
 
 ## Interpretation and Conclusion
+The three facets of our analysis — prosecutorial efficiency, defendant outcomes and demographic disparities — suggest that the policy is not compounding the ODDA’s workload, but the effects on the DeKalb County community’s overall well-being are less clear. The year 2020 was a complicated year for the criminal justice system — the onset of the pandemic in March 2020, which coincided with the policy implementation, forced the ODDA to shut down yet also exacerbated crime rates. Additionally, the widespread racial justice protests that occurred across the United States following the death of George Floyd and other Black citizens at the hands of law enforcement led to more arrests for violent crimes, which are not policy-eligible. The unique circumstances surrounding the policy’s origin explain the initial decrease in policy-eligible crimes at the beginning of 2020, However, the subsequent increase in policy eligible crimes suggests that the policy did play a more prominent role in the midst of the pandemic. The number of policy-eligible charges disposed per month has grown since the policy’s implementation, and the corresponding increase in the number of charges for which the policy was applied indicates that the policy is diverting more and more eligible defendants from the criminal justice system.
+As stated in the Introduction section, increased contact and punitiveness within the criminal justice system does not reduce crime rates or severity, the general public often have the misconception that lenient prosecutorial practices increase criminal activity and decrease community safety. It is difficult to tell on which side of the debate the ODDA’s policy lands — the percentage of felony charges in the overall data set is around 33%, and that percentage jumped to just over 40% for the charges committed by defendants who were previously charged with crimes but had at least one of their previous charges flagged as policy-eligible. The pie chart appears to suggest that, if defendants are re-arrested, their second batch of charges are more likely to contain serious, violent crimes than before. Furthermore, the percentage of recidivists committing felonies exceeds that of the general defendant population. However, Figure 1 only represents 26.7% of the total recidivists; the vast majority of recidivists did not have their first charge flagged as policy-eligible. It is encouraging to note that policy-eligible defendants do not compose the majority of recidivists, yet it is concerning that their crime severity increases upon subsequent arrests.
+Consequently, we had to determine on our own which defendants had multiple arrests, and given that many of the observations in the original data sets had missing values it was likely an imperfect classification. Having verified recidivism data would allow for a more confident and cleaner analysis of how DeKalb County recidivism rates have fluctuated since the policy implementation.
 
 # Acknowledgements
 
