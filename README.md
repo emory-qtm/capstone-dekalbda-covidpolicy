@@ -1,5 +1,5 @@
 # capstone-dekalbda-covidpolicy
-Materials for the Emory QTM COVID policy capstone project in partnership with the Office of the DeKalb District Attorney
+Materials for the Emory QTM COVID Backlog Policy Capstone project in partnership with the Office of the DeKalb County District Attorney
 ![Logo](/image/QTM_Logo.png)
 
 ## Contents
@@ -13,18 +13,18 @@ Materials for the Emory QTM COVID policy capstone project in partnership with th
 # Motivation
 This project describes the process undergone to analyze the Office of the DeKalb County District Attorney’s (ODDA) Policy Regarding Case Backlog Due to the COVID-19 Pandemic. The policy expanded the criteria for non-violent felonies eligible for dismissal and pretrial diversion to include certain drug, forgery, theft, financial crime and burglary charges. Using data sets provided by the ODDA, outside recidivism data from Vera Incarceration Trends and demographic data from the American Community Survey from the United States Census Bureau, we analyzed how the policy impacted the DeKalb County community as it pertains to Prosecutorial Performance Indicators and best-practice recidivist metrics, specifically the recidivism rate within DeKalb county and the severity of recidivist crimes. In particular, we focus on case processing efficiency, re-offender information and potential demographic disparities. The results will be helpful for identifying any weaknesses or strengths present in the policy guidelines and inform any future decisions concerning its continuance or termination.
 # Partners of Project
-We collaborated with [Office of the DeKalb County District Attorney](https://www.dekalbda.org/) for this project. Office of the DeKalb County District Attorney is the prosecutor agency representing Georgia State in Stone Mountain Judicial Circuit.
+We collaborated with the [ODDA](https://www.dekalbda.org/), the prosecutor agency representing Georgia State in the Stone Mountain Judicial Circuit, for this project.
 
-For this project, Office of the DeKalb County District Attorney has provided us guidelines, legal aid, prosecution-related data from the DeKalb District Attorney jurisdiction, and feedback to our analysis to account for an accurate representation of impact of the ODDA's Policy Regarding Case Backlog Due to the COVID-19 Pandemic. 
+For this project, the ODDA has provided us with guidelines, legal aid, prosecution and sentencing data from their jurisdiction and feedback concerning our analysis to account for an accurate representation of the policy's impact. 
 # Intended Use of Project
-A typical user of this Github repository should have interest in the following:
-- learn the recidivism of the convicted through data from DeKalb County District Attorney’s jurisdiction
-- understand how to apply satistical inference in recidivism analysis
-- explore the impact of government intervention on recidivism
+A typical user of this Github repository should have an interest in the following:
+- learning recidivism characteristics of those charged with crimes through data from the ODDA’s jurisdiction
+- understanding how to apply statistical inference to recidivism analysis
+- exploring the impact of government intervention on recidivism
 
-This repository is designed to help Python and R users to analyze and visualize the recidivism in DeKalb County District Attorney’s jurisdiction.
+This repository is designed to help Python and R users to analyze and visualize the recidivism in the ODDA’s jurisdiction.
 ## Use of Data Sources
-The data used in this project is provided and permitted by Office of the DeKalb County District Attorney, which shall not be displayed on any public device and space and shall not remain on any personal computer after the project is finished. Therefore, this Github repository will not display or store the data.
+The data used in this project is confidential and can not be displayed publicly and space or not remain on any personal computer after the project is finished. Therefore, this Github repository will not display or store the data.
 # Setup
 This section instructs the user how to prepare necessary tools and environment for replicate our research.
 ## Installation
@@ -55,7 +55,7 @@ Python 3.10.10
 ### Pycharm
 You can download PyCharm from the [JetBrains website](https://www.jetbrains.com/pycharm/).
 
-Choose Community Edition which will be enough for the project.
+Choose Community Edition, which will be adequate for the project.
 
 Follow the default setting and finish the installation.
 
@@ -90,10 +90,10 @@ Open pycharm and open the command line, input:
 > pip install numpy pandas
 
 ## Dataset
-The dataset used in this Capstone project can not be uploaded to public repository and are not allowed to be stored on any personal or public device without the permission from the DeKalb District Attorney Office. However, in the readme, the structure of the data and explanation of variables used will be included.
+The ODDA's datasets are confidential, but, the structure of the data and explanation of variables used is included in the README.
 
 # Code
-In our capstone project, we have one notebook. finalNotebook.ipynb notebook is a integrated notebook used both data cleaning, analysis, and visualization. We extract useful factors and target variables from raw datasets and combine them into cleaned datasets. Then we produce visualization to important factors that stakeholders care about, mainly recidivism-related variables. 
+In our capstone project, we have one notebook, finalNotebook.ipynb, which contains data cleaning, analysis, and visualization. We extract useful factors and target variables from raw datasets and combine them into cleaned datasets. Then we produce visualizations of important factors that address the stakeholders' problem statement, mainly recidivism-related variables. 
 
 - Decision Making Method: The decision-making method used in this study will be based on Z-test significance testing, which will help to identify the effect of the policy on recidivism rates and therefore community safety, and a structural break, which identifies points in time during which noticeable changes in case management efficiency occurred.
 
@@ -116,7 +116,7 @@ In our capstone project, we have one notebook. finalNotebook.ipynb notebook is a
 | Not Presented to Grand Jury Restrict Converted |
 | Pre Trial Diversion Restrict                   |
 
-- Grouping Criteria: To see whether the policy is impacting recidivism rates, a comparison between the defendants with charges flagged as policy eligible by prosecutors and unflagged defendants with similar charges is necessary. Thus, the eligible defendants were divided as such: the treatment group is composed of defendants flagged by a prosecutor as policy eligible and had the policy applied the control group are those not flagged by a prosecutor as policy eligible but who have charges that meet the eligibility criteria and those flagged as eligible but did not have the policy applied. The former will heretofore be referred to as the policy eligible, policy applied population and the latter as the policy eligible, policy not applied population (see Appendix Item 5).
+- Grouping Criteria: To see whether the policy is impacting recidivism rates, a comparison between the defendants with charges flagged as policy eligible by prosecutors and unflagged defendants with similar charges is necessary. Thus, the eligible defendants were divided as such: the treatment group is composed of defendants flagged by a prosecutor as policy eligible and had the policy applied the control group are those not flagged by a prosecutor as policy eligible but who have charges that meet the eligibility criteria and those flagged as eligible but did not have the policy applied. The former will heretofore be referred to as the policy eligible, policy applied population and the latter as the policy eligible, policy not applied population.
 
 |                | Policy Applied | Policy Not Applied |
 |----------------|----------------|--------------------|
@@ -161,4 +161,4 @@ There are also some statistical attempt to evaluate the effect of the policy usi
 
 # Acknowledgements
 
-These notebooks were created by Claire Fenton, Annie Luo, and Feiyu Xiang,. This project wouldn't have been possible without the support from Dr. Blake Fleischer, Office of DeKalb County District Attorney, and Emory University QTM Department. These notebooks were built using the R and Python statistical program.
+These notebooks were created by Claire Fenton, Annie Luo, and Feiyu Xiang,. This project wouldn't have been possible without the support from Dr. Blake Fleischer, the Office of DeKalb County District Attorney, and the Emory University QTM Department. These notebooks were built using the R and Python statistical program.
