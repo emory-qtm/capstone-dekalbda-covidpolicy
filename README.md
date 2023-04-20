@@ -54,18 +54,62 @@ Python 3.10.10
 
 ### Pycharm
 You can download PyCharm from the [JetBrains website](https://www.jetbrains.com/pycharm/).
+
 Choose Community Edition which will be enough for the project.
+
+Follow the default setting and finish the installation.
+
 ![download-pycharm.jpg](image%2Fdownload-pycharm.jpg)
 
 ### Anaconda
 
+Visit [Anaconda.com/downloads](https://www.anaconda.com/download/)
+
+Select Windows
+
+Download the .exe installer
+
+Open and run the .exe installer with the default setting
+
+Search Anaconda in the search bar
+
+Click Anaconda Navigator (Anaconda 3)
+
+![download-pycharm.jpg](image%2Fdownload-pycharm.jpg)
+
+Open Jupyter Notebook
+
+![jupyter.png](image%2Fjupyter.png)
+
+Find the .ipynd file of the project and finished
+
 ### R
+
+Go to [R](https://cran.r-project.org/bin/windows/base/) and download the latest version
+
+![R.png](image%2FR.png)
+
+Follow the default setting and finish the installation
 
 ### R Studio
 
+To begin, go to [Download the RStudio IDE](https://posit.co/download/rstudio-desktop/)
+
+![Rstudio.png](image%2FRstudio.png)
+
+Choose Download RStudio Desktop Free version
+
 ### Install prerequisite Python packages
 
+Open pycharm and open the command line, input:
+
+> pip install numpy pandas 
+
 ### Install prerequisite R packages
+
+Open RStudio Desktop Free version and enter the following into the console:
+
+>  install.packages(c("tidyverse", "strucchange", "tseries"))
 
 ## Dataset
 The dataset used in this Capstone project can not be uploaded to public repository and are not allowed to be stored on any personal or public device without the permission from the DeKalb District Attorney Office. However, in the readme, the structure of the data and explanation of variables used will be included.
@@ -79,3 +123,5 @@ The dataset used in this Capstone project can not be uploaded to public reposito
 ## Interpretation and Conclusion
 
 # Acknowledgements
+
+These notebooks were created by Claire Fenton, Annie Luo, and Feiyu Xiang,. This project wouldn't have been possible without the support from Dr. Blake Fleischer, Office of DeKalb County District Attorney, and Emory University QTM Department. These notebooks were built using the R and Python statistical program.
